@@ -18,6 +18,7 @@ h1 {
 }
 
 #book-list {
+  display: none;
   margin-top: 20px;
   text-align: center;
   text-decoration-color: blueviolet;
