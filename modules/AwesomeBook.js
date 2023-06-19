@@ -26,43 +26,43 @@ export default class AwesomeBook {
   
       this.addRemoveEventListeners();
     }
-  
-    clearFields() {
-      this.titleElement.value = '';
-      this.authorElement.value = '';
-    }
-  
-    addBook(title, author) {
-      this.books.push({ title, author });
-      localStorage.setItem('books', JSON.stringify(this.books));
-      this.clearFields();
-      this.displayBooks();
-    }
-  
-    removeBook(index) {
-      this.books.splice(index, 1);
-      localStorage.setItem('books', JSON.stringify(this.books));
-      this.displayBooks();
-    }
-  
-    addEventListeners() {
-      this.addBookBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        const title = document.getElementById('bookname').value;
-        const author = document.getElementById('authorname').value;
-        if (title && author !== '') {
-          this.addBook(title, author);
-        }
-      });
-    }
-  
-    addRemoveEventListeners() {
-      const removeBtns = document.querySelectorAll('.remove-button');
-      removeBtns.forEach((btn) => {
-        btn.addEventListener('click', (e) => {
-          const index = parseInt(e.target.id, 10);
-          this.removeBook(index);
-        });
-      });
-    }
+
+  clearFields() {
+  this.titleElement.value = '';
+  this.authorElement.value = '';
+}
+
+   addBook(title, author) {
+    this.books.push({ title, author });
+    localStorage.setItem('books', JSON.stringify(this.books));
+    this.clearFields();
+    this.displayBooks();
   }
+
+  removeBook(index) {
+    this.books.splice(index, 1);
+    localStorage.setItem('books', JSON.stringify(this.books));
+    this.displayBooks();
+  }
+
+  addEventListeners() {
+    this.addBookBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const title = document.getElementById('bookname').value;
+      const author = document.getElementById('authorname').value;
+      if (title && author !== '') {
+        this.addBook(title, author);
+      }
+    });
+  }
+
+  addRemoveEventListeners() {
+    const removeBtns = document.querySelectorAll('.remove-button');
+      removeBtns.forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        const index = parseInt(e.target.id, 10);
+      this.removeBook(index);
+    });
+  });
+  }
+}
