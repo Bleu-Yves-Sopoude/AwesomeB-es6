@@ -20,5 +20,4 @@ document.querySelector('.addbutton').addEventListener('click', (e) => {
     document.getElementById('bookname').value = '';
     document.getElementById('authorname').value = '';
   }
-}
-);
+},);

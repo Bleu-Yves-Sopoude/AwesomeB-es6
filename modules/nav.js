@@ -21,5 +21,5 @@ const contactShow = () => {
 };
 
 export {
-  listShow, addShow, contactShow, 
+  listShow, addShow, contactShow,
 };
