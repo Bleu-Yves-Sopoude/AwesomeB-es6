@@ -60,7 +60,7 @@ export default class AwesomeBook {
       btn.addEventListener('click', (e) => {
         const index = parseInt(e.target.id, 10);
         this.removeBook(index);
-    });
+      });
     });
   }
 }
