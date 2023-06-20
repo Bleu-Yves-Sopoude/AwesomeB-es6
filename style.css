@@ -1,0 +1,131 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif, cursive;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-size: 2rem;
+}
+
+#content {
+  text-decoration: double;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#book-list {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration-color: blueviolet;
+}
+
+#listSection {
+  display: none;
+}
+
+#book-list div:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#book-list div:nth-child(odd) {
+  background-color: #fff;
+}
+
+button .remove-button {
+  float: right;
+}
+
+#bookContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  padding: 10px;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+#contact {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.menu ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  border: none;
+  background-color: white;
+}
+
+.menu ul li:not(:last-child)::after {
+  content: "|";
+  margin-left: 10px;
+}
+
+.menu ul li a:hover {
+  color: rgb(79, 67, 240);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  height: 10%;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+#date {
+  text-align: right;
+  margin-left: 40%;
+  font-size: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
